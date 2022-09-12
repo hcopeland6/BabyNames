@@ -13,7 +13,7 @@ public class Manager {
 	//This is a comment to prove that the git integration works
 	//This is the secondary addon
 	//This is a tertiary addon
-	
+	//some more comments
 	
 	FileLoader fl = new FileLoader();
 	
