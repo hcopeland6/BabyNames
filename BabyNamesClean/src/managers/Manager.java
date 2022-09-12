@@ -37,10 +37,12 @@ public class Manager {
             q2.runQ2(babyNamesData);
         } else if(querySelection.equals("Y")){
             q3.runQ3(babyNamesData);
-        } else {
+        } else if(querySelection.equals("Q")){
             System.out.println("Goodbye.");
             in.close();
             return;
+        } else {
+        	System.out.println("Please enter a valid letter. Try again.");
         }
         
         System.out.println("\n");
