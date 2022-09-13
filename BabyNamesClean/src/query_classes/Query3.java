@@ -12,8 +12,14 @@ public class Query3 extends QueryHelper {
 	public void runQ3(Map<String, ArrayList<Data>> babyNamesData) {
 		System.out.println("Select a name");
 		String name = scanner.nextLine();
+		name = capitalizeName(name);
+		
 		System.out.println("Select a gender");
 		String gender = scanner.nextLine().toUpperCase();
+		if(!isGenderValid(gender)) {
+        	System.out.println("Invalid Gender, try again.");
+        	return;
+        }
 
 		String[] unparsedYearAndFreq = getYearAndFreqForMostPopularNameGender(babyNamesData, name, gender);
 		String year = unparsedYearAndFreq[0];

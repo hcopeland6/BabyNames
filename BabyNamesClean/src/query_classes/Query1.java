@@ -12,9 +12,17 @@ public class Query1 extends QueryHelper{
 	public void runQ1(Map<String, ArrayList<Data>> babyNamesData) {
 		System.out.println("Select a year");
         String year = scanner.nextLine();
+        if(!isValidYear(year)) {
+        	System.out.println("Data for this year is not available.");
+        	return;
+        }
 
         System.out.println("Select a gender");
         String gender = scanner.nextLine().toUpperCase();
+        if(!isGenderValid(gender)) {
+        	System.out.println("Invalid Gender, try again.");
+        	return;
+        }
         
         Data dataToBeFormatted = getDataByYear(babyNamesData, year, gender);
         

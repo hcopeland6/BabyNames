@@ -12,10 +12,21 @@ public class Query2 extends QueryHelper{
 	public void runQ2(Map<String, ArrayList<Data>> babyNamesData) {
 		System.out.println("Select a name");
         String name = scanner.nextLine();
+        name = capitalizeName(name);
+        
         System.out.println("Select a gender");
         String gender = scanner.nextLine().toUpperCase();
+        if(!isGenderValid(gender)) {
+        	System.out.println("Invalid Gender, try again.");
+        	return;
+        }
+        
 		System.out.println("Select a year");
         String year = scanner.nextLine();
+        if(!isValidYear(year)) {
+        	System.out.println("Data for this year is not available.");
+        	return;
+        }
         
         int rank = getRank(year, name, gender, babyNamesData);
         String freq = getFreqByNameAndYear(babyNamesData, name, year, gender);  
