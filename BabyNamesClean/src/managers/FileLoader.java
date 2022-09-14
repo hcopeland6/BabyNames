@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class FileLoader {
 
-	private final String PATH_NAME_PREFIX = "/Users/huntercopeland/Desktop/Elon/Year4Sem1/SoftwareDesign/EclipseSD/BabyNames/us_name_data/yob";
+	private final String PATH_NAME_PREFIX = "us_name_data/yob";
 
 	public Map<String, ArrayList<Data>> loadData() {
 
