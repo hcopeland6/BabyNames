@@ -135,5 +135,16 @@ public class QueryHelper {
 		int yearNum = Integer.parseInt(year);
 		return (yearNum <= MAX_YEAR && yearNum >= MIN_YEAR);
 	}
+	
+	public String toString(Map<String, String> ranks) {
+		
+		String result = "";
+		
+		for(String year : ranks.keySet()) {
+			result += "Year: " + year + " Rank: " + ranks.get(year) + "\n";
+		}
+		
+		return result;
+	}
 
 }
