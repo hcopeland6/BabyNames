@@ -104,7 +104,7 @@ public class QueryHelper {
 		int tmpFreq = 0;
 		String year = null;
 
-		for (int i = 1880; i <= 2022; i++) {
+		for (int i = MIN_YEAR; i <= MAX_YEAR; i++) {
 			for (Data data : babyNamesData.get(String.valueOf(i))) {
 				if (data.getGender().equals(gender)) {
 					if (data.getName().equals(name)) {

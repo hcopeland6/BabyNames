@@ -40,11 +40,9 @@ public class Manager {
 		System.out.println("Y  Find the year in which the given name, gender combination was most popular.");
 		System.out.println("A  Show all the rankings of a name/gender pair");
 		System.out.println("B  Show the rankings of a name/gender pair within a range of years");
-		System.out.println(
-				"C  Compare the rank of one name/gender pair in a specific year to that of their rank in next closest year");
+		System.out.println("C  Compare the rank of one name/gender pair in a specific year to that of their rank in the most recent year");
 		System.out.println("D  Give the average rank of a name/gender pair in a range of years");
-		System.out.println(
-				"E  Give the most popular letter for a specific gender, along with all the names that start with that letter.");
+		System.out.println("E  (WIP) Give the most popular letter for a specific gender, along with all the names that start with that letter.");
 
 		System.out.println("Q Quit");
 		String querySelection = in.nextLine().toUpperCase();
