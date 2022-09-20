@@ -69,7 +69,7 @@ public class QueryHelper {
 		return freqSetMale;
 	}
 
-	protected Data getDataByYear(Map<String, ArrayList<Data>> babyNamesData, String year, String gender) {
+	public Data getDataByYear(Map<String, ArrayList<Data>> babyNamesData, String year, String gender) {
 		int tmp = 0;
 		Data tmpData = null;
 
